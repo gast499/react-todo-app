@@ -1,4 +1,4 @@
-export const addTask = (task) => {
+const addTask = (task) => {
         return {
             type: 'ADD_TASK',
             payload: task
@@ -10,3 +10,5 @@ export const addTask = (task) => {
             payload: taskId
         };
     };
+
+export default {addTask, deleteTask};
