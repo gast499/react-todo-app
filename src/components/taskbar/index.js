@@ -18,4 +18,4 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({addTask}, dispatch);
 };
 
-export default connect(()=>{},)(TaskBar)
+export default connect(()=>{},mapDispatchToProps)(TaskBar)
