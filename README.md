@@ -1,3 +1,5 @@
+DID THE TUTORIAL LOCATED HERE:  https://www.youtube.com/watch?v=pdx-I2req-A
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
