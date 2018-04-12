@@ -6,7 +6,10 @@ export default class TaskList extends React.Component{
         return(
           <table>
               <thead>
-                
+                <tr>
+                    <th>Tasks</th>
+                    <th>Actions</th>
+                </tr>
               </thead>
 
               <tbody>
