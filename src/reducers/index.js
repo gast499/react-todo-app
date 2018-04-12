@@ -9,6 +9,8 @@ const tasksReducer = (state = [], action) => {
                 state = state.slice();
                 state.splice(action.payload, 1);
                 break;
+            default:
+                break;
         }
         return state;
     },
