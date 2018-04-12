@@ -1,6 +1,7 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-export default class TaskList extends React.Component{
+class TaskList extends React.Component{
 
     render(){
         return(
@@ -13,9 +14,16 @@ export default class TaskList extends React.Component{
               </thead>
 
               <tbody>
-
+                {this.props.tasks.map((task,index)=><Task key={index} task={task}></Task>)}
               </tbody>
           </table>
         );
     }
+};
+
+function mapStateToProps(state) {
+    return {
+        tasks:state.tasks
+    }
 }
+export default connect(mapStateToProps)(TaskList);
